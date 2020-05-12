@@ -4,6 +4,10 @@ import PetsList from './PetsList'
 export default function Friend(props) {
   const { friend } = props
 
+  if (!friend) return (
+    <div className='friend-friends container'></div>
+  )
+
   return (
     <div className='friend-friends container'>
       <h2>{friend.name}</h2>
