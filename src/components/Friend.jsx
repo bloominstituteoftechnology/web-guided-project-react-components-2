@@ -2,25 +2,21 @@ import React from 'react'
 import PetsList from './PetsList'
 
 export default function Friend(props) {
-  const { friend } = props
-
-  if (!friend) return (
-    <div className='friend-friends container'></div>
-  )
+  // 1- What does a Friend need?
 
   return (
     <div className='friend-friends container'>
-      <h2>{friend.name}</h2>
+      {/* 2- Fix the JSX so it displays real info coming into the component */}
+      <h2>Jessica</h2>
 
       <div className='friend-info'>
         <div >
-          <p>Age: {friend.age}</p>
+          <p>Age: 26</p>
 
-          {/* 1- Display something better in the Married area */}
-          <p>Married: {friend.married}</p>
+          <p>Married: yes</p>
           <div>Likes:
             <ul>
-              {/* 2- Loop over the friend's hobbies and generate <li/> elements as you go */}
+              {/* 3- Loop over the friend's hobbies and generate <li/> elements as you go */}
             </ul>
           </div>
         </div>
