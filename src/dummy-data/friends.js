@@ -5,9 +5,9 @@ export const hello = 'world'
 export default [
   {
     id: uuid(),
-    name: 'Marta',
+    name: 'Amber',
     age: 23,
-    likes: [
+    hobbies: [
       'hiking',
       'netflix',
       'death metal',
@@ -21,9 +21,9 @@ export default [
   },
   {
     id: uuid(),
-    name: 'Jonathan',
+    name: 'Lynda',
     age: 27,
-    likes: [
+    hobbies: [
       'fishing',
       'sightseeing',
       'heavy metal',
@@ -37,9 +37,9 @@ export default [
   },
   {
     id: uuid(),
-    name: 'Wei',
+    name: 'Vince',
     age: 21,
-    likes: [
+    hobbies: [
       'exotic animals',
       'bird watching',
       'hiking',

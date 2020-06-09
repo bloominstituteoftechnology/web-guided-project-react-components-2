@@ -20,7 +20,7 @@ export default function Friend(props) {
           <p>Married: {friend.married}</p>
           <div>Likes:
             <ul>
-              {/* 2- Loop over the friend's likes and generate <li/> elements as you go */}
+              {/* 2- Loop over the friend's hobbies and generate <li/> elements as you go */}
             </ul>
           </div>
         </div>
