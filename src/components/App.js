@@ -15,15 +15,18 @@ export default function App() {
   // 4- Initialize a slice to keep track of the value of the search box
   // using an empty string as the initial value of the slice
 
+  // 5- Build a `changeStatus` function that takes an id and
+  // changes the `married` from true to false and viceversa
+
   // STRETCH - Make a helper function that returns
   // a filtered array of friends data (filtering by search term)
 
   return (
     <div className='app-friends container'>
-      {/* 5- Render the Search component */}
+      {/* 6- Render the Search component */}
       {/* STRETCH - Changes to the input should update the search term */}
 
-      {/* 6- Render the FriendsList component */}
+      {/* 7- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
     </div>
   )

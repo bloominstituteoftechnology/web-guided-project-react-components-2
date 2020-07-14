@@ -7,16 +7,16 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-plugin-react": "^7.20.0",
-    "less": "^3.11.3",
+    "eslint": "^7.4.0",
+    "eslint-plugin-react": "^7.20.3",
+    "less": "^3.12.0",
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "uuid": "^8.1.0"
+    "uuid": "^8.2.0"
   },
   "repository": {
     "type": "git",
