@@ -1,5 +1,5 @@
 import React from 'react'
-// 1- We need the Pet component
+// 👉 1- We need the Pet component
 
 export default function PetsList(props) {
   const { pets } = props
