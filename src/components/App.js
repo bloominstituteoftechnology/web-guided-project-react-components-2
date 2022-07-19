@@ -42,15 +42,27 @@ export default function App() {
 
   // STRETCH - Make a helper function that returns
   // a filtered array of friends data (filtering by search term)
+  const filterFriends = () => {
+    // First things first...remove all beginning / ending white space from search term
+    // convert search term to all lower case
+    const normalizedTerm = searchBox.trim().toLowerCase();
+    if (!normalizedTerm) return friends;
+    const updatedFriends = friends.filter(friend => {
+      return friend.name.toLowerCase().includes(normalizedTerm);
+    })
+    return updatedFriends;
+  }
+
+  // what is a string in JS???? "Casey" => ["C", "a", "s", "e", "y"]
 
   return (
     <div className='app-friends container'>
       {/* 👉 6- Render the Search component */}
       {/* STRETCH - Changes to the input should update the search term */}
-      <Search />
+      <Search setSearchBox={setSearchBox} />
       {/* 👉 7- Render the FriendsList component */}
       {/* What prop/props does FriendsList need? */}
-      <FriendsList friends={friends} changeStatus={changeStatus} />
+      <FriendsList friends={filterFriends()} changeStatus={changeStatus} />
     </div>
   )
 }
@@ -61,4 +73,17 @@ export default function App() {
  *   changeStatus: changeStatus
  * }
  * FriendsList(props)
+ */
+
+/**
+ * What are props??? => data passed from parent to child
+ * What is state???? => data that lives in the component
+ * What method(s) do we use to loop in JSX??? => map / filter / reduce / forEach / find
+ * What is JSX?????? => JavaScript Markup Language
+ * What is a React Component? => function!
+ * What does useState return? => array with two values:
+ *     the first is the state variable, the second the way to update said state variable
+ * What is a String in JS???? => Array of characters
+ * 1 == "1" ??? true
+ * 1 === "1" ?? false
  */
